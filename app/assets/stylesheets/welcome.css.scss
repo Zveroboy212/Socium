@@ -1,0 +1,100 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.fon{
+	background-image: url('nature-beautiful-wallpapers-scenery-wallpaper.jpg');
+	-presto-background-image: url("nature-beautiful-wallpapers-scenery-wallpaper.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 100%;
+	
+}
+div.login input:focus{
+	border-color:rgba(255,25,33,.75);
+	box-shadow:0 0 8px rgba(225,25,33,.5);
+	z-index: 2;
+
+}
+input:hover{
+	border-color:rgba(255,25,33,.75);
+}
+#box_1{
+	position: absolute;
+	top: 15%;
+	left: 50px;
+	width: 250px;
+	height: 200px;
+
+	
+}
+label.Metka{
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	font-size: 18px;
+	text-shadow: 5px 5px 12px black;
+	z-index: 2;
+}
+input.Button{
+	font-weight: bold;
+	color: black;
+	width: 75px;
+	text-align: center;
+	background-color: white;
+	z-index: 2;
+	margin-bottom: 10px;
+}
+input.Button:hover{
+	color: red;
+}
+.welcome_text{
+	position: absolute;
+	top: 15%;
+	right: 15%;
+	width: auto;
+	height: 350px;
+
+}
+#text_1{
+	font-size: 20px;
+	text-shadow: 5px 5px 12px black;
+	font-weight: bold;
+	
+}
+div.welcome_text pre span{
+	padding: 5px 5px 5px 5px;
+	z-index: 2;
+}
+div.welcome_text pre{
+	position: absolute;
+	top: -4px;
+	right: 5%;
+}
+#background_1{
+	width: 275px;
+	height: 160px;
+	background-color: white;
+	opacity: 0.7;
+	z-index: 1;
+	border: 1px solid white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+div.register{
+	position: absolute;
+	top: 10%;
+	left: 5%;
+}
+#background_2{
+
+	width: 800px;
+	height: 50px;
+	background-color: white;
+	opacity: 0.5;
+	border: 1px solid white;
+	z-index: 1;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+div.register form input{
+	margin-bottom: 10px;
+}
