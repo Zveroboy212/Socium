@@ -7,7 +7,7 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	background-size: 100%;
+	background-size: auto;
 	
 }
 div.login input:focus{
@@ -51,11 +51,10 @@ input.Button:hover{
 .welcome_text{
 	width: auto;
 	height: auto;
-	position: absolute;
-	top: 15%;
-	right: 15%;
-	width: auto;
-	height: 350px;
+	float: right;
+	size:auto;
+	margin-right: -300px;
+	margin-top: -50px;
 
 }
 #text_1{
@@ -68,12 +67,13 @@ input.Button:hover{
 }
 div.welcome_text pre span{
 	padding: 5px 5px 5px 5px;
-	z-index: 2;
+	
 }
 div.welcome_text pre{
-	position: absolute;
-	top: -4px;
+	position: relative;
+	top: 50px;
 	right: 5%;
+	z-index: 2;
 }
 #background_1{
 	width: 275px;
@@ -90,8 +90,9 @@ div.register{
 	left: 5%;
 }
 #background_2{
-
-	width: 800px;
+	position: absolute;
+	top: 15px;
+	width: 872.5px;
 	height: 50px;
 	background-color: white;
 	opacity: 0.5;
@@ -101,4 +102,8 @@ div.register{
 }
 div.register form input{
 	margin-bottom: 10px;
+}
+#global_container{
+width: 1000px;
+height: 750px;
 }
