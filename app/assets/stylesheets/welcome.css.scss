@@ -92,7 +92,7 @@ div.register{
 #background_2{
 	position: absolute;
 	top: 15px;
-	width: 872.5px;
+	width: 908px;
 	height: 50px;
 	background-color: white;
 	opacity: 0.5;
@@ -106,4 +106,49 @@ div.register form input{
 #global_container{
 width: 1000px;
 height: 750px;
+}
+.Button_registration{
+	font-weight: bold;
+	color: black;
+	width: 100px;
+	text-align: center;
+	background-color: white;
+	z-index: 2;
+	margin-bottom: 10px;
+}
+.Button_registration:hover{
+	color: red;
+	border-color:rgba(255,25,33,.75);
+}
+
+/*
+далее css для страницы регистрации
+*/
+div.reg_table{
+	position: absolute;
+	top: 10%;
+	left: 40%;
+	z-index: 1;
+}
+#background_3{
+	position: absolute;
+	top: 10%;
+	left: 39%;
+	
+	background-color: white;
+	width: 370px;
+	height: 410px;
+	opacity: 0.7;
+}
+#table_reg{
+	z-index: 2;
+}
+.text_style_table{
+	
+	font-weight: bold;
+	text-shadow: 5px 5px 12px black;
+}
+#submit_button{
+margin-left: 135px;
+margin-top: 10px;
 }
