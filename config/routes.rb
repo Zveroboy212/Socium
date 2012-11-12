@@ -1,5 +1,8 @@
 Social::Application.routes.draw do
+  get "user/index"
+
   get "welcome/index"
+  get "welcome/registration"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
