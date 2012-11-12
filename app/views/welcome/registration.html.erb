@@ -2,27 +2,27 @@
 	<div id="background_3"></div>
 <div class="reg_table">
 	
-	<form>
+	<%= form_for @person do |f| %>
 		<table id="table_reg" class="text_style_table">
 			<tr>
-				<td> <p> Name </p></td>
-				<td><input type="text" name="Name" placeholder="Enter your name"></input></td>
+				<td><p><%= f.label "Name" %></p></td>
+				<td><%= f.text_field :name, :placeholder=>"Enter your name" %></td>
 			</tr>
 			<tr>
-				<td> <p> Surname </p></td>
-				<td><input type="text" name="Surname" placeholder="Enter your surname"></input></td>
+				<td><p><%= f.label "Surname" %></p></td>
+				<td><%= f.text_field :surname, :placeholder=>"Enter your surname" %></td>
 			</tr>
 			<tr>
-				<td> <p> Nick </p></td>
-				<td><input type="text" name="Nick" placeholder="Enter your nick-name"></input></td>
+				<td><p><%= f.label "Nick" %></p></td>
+				<td><%= f.text_field :nickname, :placeholder=>"Enter your nick-name" %></td>
 			</tr>
 			<tr>
-				<td> <p> E-mail </p></td>
-				<td><input type="text" name="E_mail" placeholder="Enter your e-mail"></input></td>
+				<td><p><%= f.label "Email" %></p></td>
+				<td><%= f.text_field :email, :placeholder=>"Enter your e-mail" %></td>
 			</tr>
 			<tr>
-				<td> <p> Password </p></td>
-				<td><input type="password" name="Pass" placeholder="Enter your password"></input></td>
+				<td><p><%= f.label "Password" %></p></td>
+				<td><%= f.password_field :password, :placeholder=>"Enter your password" %></td>
 			</tr>
 			<tr>
 				<td> <p> Confirm password </p></td>
@@ -33,8 +33,8 @@
 				
 			</tr>
 		</table>
-		<input type="submit" name="submit" value="Submit" id="submit_button" class="button_registration"></input>
-	</form>
+		<%= f.submit  :class => :button_registration  %>
+	<% end %>
 </div>
 </div>
 

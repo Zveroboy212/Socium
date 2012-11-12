@@ -9,6 +9,5 @@ class Person
   property :password, String, :required => true
   property :nickname, String
 
-
-
+  validates_uniqueness_of :email
 end

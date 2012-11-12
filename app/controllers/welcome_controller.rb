@@ -2,6 +2,7 @@ class WelcomeController < ApplicationController
   def index
   end
 
-  def registration  	
+  def registration
+    @person = Person.new  	
   end
 end
