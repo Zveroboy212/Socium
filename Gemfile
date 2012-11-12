@@ -23,6 +23,12 @@ end
 
 gem 'jquery-rails'
 
+#ORM
+REQUIRED_DM_VERSION = '~> 1.2.0'
+
+%w{core constraints migrations transactions timestamps do-adapter rails active_model sqlite-adapter}.each do |dm_gem|
+  gem "dm-#{dm_gem}", REQUIRED_DM_VERSION
+end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
