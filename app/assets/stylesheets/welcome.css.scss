@@ -3,7 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .fon{
 	background-image: url('nature-beautiful-wallpapers-scenery-wallpaper.jpg');
-	-presto-background-image: url("nature-beautiful-wallpapers-scenery-wallpaper.jpg");
+	-webkit-background-image: url("nature-beautiful-wallpapers-scenery-wallpaper.jpg");
+	-moz-background-image: url("nature-beautiful-wallpapers-scenery-wallpaper.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
@@ -12,6 +13,7 @@
 }
 .reg{
 	text-decoration: none;
+	padding-top: 10px;
 }
 div.login input:focus{
 	border-color:rgba(255,25,33,.75);
@@ -51,32 +53,27 @@ input.Button{
 input.Button:hover{
 	color: red;
 }
-.welcome_text{
-	width: auto;
-	height: auto;
-	float: right;
-	size:auto;
-	margin-right: -300px;
-	margin-top: -50px;
 
+
+
+#welcome_image{
+	position: absolute;
+	top: 100px;
+	left: 400px;
 }
 #text_1{
-	width: auto;
-	height: auto;
+	position: absolute;
+	top: 35px;
+	left: 545px;
+	width: 200px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+	margin-right: 0px;
 	font-size: 20px;
 	text-shadow: 5px 5px 12px black;
 	font-weight: bold;
 	
-}
-div.welcome_text pre span{
-	padding: 5px 5px 5px 5px;
-	
-}
-div.welcome_text pre{
-	position: relative;
-	top: 50px;
-	right: 5%;
-	z-index: 2;
 }
 #background_1{
 	width: 275px;
@@ -94,13 +91,14 @@ div.register{
 }
 #background_2{
 	position: absolute;
-	top: 15px;
-	width: 908px;
-	height: 50px;
+	top: 40px;
+	left: 480px;
+	width: 316px;
+	height: 58px;
 	background-color: white;
 	opacity: 0.5;
 	border: 1px solid white;
-	z-index: 1;
+	z-index: 0;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 div.register form input{
@@ -110,17 +108,18 @@ div.register form input{
 width: 1000px;
 height: 750px;
 }
-.Button_registration{
+.button_registration{
 	font-weight: bold;
 	color: black;
-	width: 100px;
-	text-align: center;
+	width: 120px;
 	background-color: white;
 	z-index: 2;
 	margin-bottom: 10px;
+	margin-top: 20px;
 	text-decoration:none;
+	padding-right: 5px;
 }
-.Button_registration:hover{
+.button_registration:hover{
 	color: red;
 	border-color:rgba(255,25,33,.75);
 }
@@ -146,6 +145,7 @@ div.reg_table{
 }
 #table_reg{
 	z-index: 2;
+	width: 350px;
 }
 .text_style_table{
 	
@@ -160,51 +160,42 @@ margin-top: 10px;
 
 a {color:#F00}
 
-.title {
-	text-align: center;
-	font: 700 12 Verdana, Geneva, sans-serif;
-	color: #666
-}
+
 #open_block { 
-   	position: absolute;
-   	width: 320px;
+	position: absolute;
+	margin-left: 50px;
 	top: 0px;
-	right:-500px;
+	left: 100%;
+	width: 320px;
 	display: none;
-  	z-index: 10;
+  	z-index: 1;
     overflow: hidden;
-	background: #f6f6f6;
+	background: white;
+	opacity: 0.7;
 }
 #close {
 	float: right;
-	font: 10px Verdana, Geneva, sans-serif;
-	color: #999;
-	margin: 10px 0 0 0;
+	font-size: 20px;
+	font-family: serif;
+	color: red;
+	margin-right: 10px;
 }
-.content {margin-right:0;color:#999;font: 11px Verdana, Geneva, sans-serif;text-align:justify}	
-.top_left0, .top_right0, .bottom_left0, .bottom_right0 {width:22px;height:22px}
-	.top_left0 {background:url(img/white/top_left.png) no-repeat}
-	.top_right0 {background:url(img/white/top_right.png) no-repeat}
-	.bottom_left0 {background:url(img/white/bottom_left.png) no-repeat}
-	.bottom_right0 {background:url(img/white/bottom_right.png) no-repeat}
-.top0, .bottom0 {height:22px}
-	.top0 {background:url(img/white/top.png) repeat-x}
-	.bottom0 {background:url(img/white/bottom.png) repeat-x}
-.left0, .right0 {width:22px}
-	.left0 {background:url(img/white/left.png) repeat-y}
-	.right0 {background:url(img/white/right.png) repeat-y}
-#pop_up{
+#title_agree{
+	color: red;
+	font-size: 16px;
+}
+
+
+.pop_up{
+	margin-left: 5px;
+	margin-right: 5px;
 	text-shadow:none;
+z-index: 10;
+font-size: 10px;
+
 }
 #first_letter{
 	font-size: 20px;
-
 }
-#person_name, #person_surname, #person_nickname, #person_email, #person_password{ 	width: 150px; }
+#person_name, #person_surname, #person_nickname, #person_email, #person_password, #person_password_confirm{ 	width: 150px; }
 
-
-#open_block{
-	position: absolute;
-	top: 0px;
-	right: -400px; 
-}

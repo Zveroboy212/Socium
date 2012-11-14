@@ -26,24 +26,20 @@
 			</tr>
 			<tr>
 				<td> <p> Confirm password </p></td>
-				<td><input type="password" name="Conf_pass"></input></td>
+				<td><%= f.password_field :password_confirm %></td>
+			
 			</tr>
 			<tr>
 				<td><input type="checkbox"; name="flag_1"><label>
 					<a onClick="document.getElementById('open_block').style.display='block';return false;" title=""> License agreement </a>
 
 <div id="open_block">
-		<table width="100%" border="0" cellspacing="0" cellpadding="0" id="pop_up">
-			<tr>
-				<td class="top_left0"></td>
-				<td class="top0"></td>
-				<td class="top_right0"></td>
-			</tr>
-			<tr>
-				<td class="left0"></td>
-				<td class="content">
-					<p class="title"><b>License</b></p>
-						<span id="first_letter">T</span>his product may allow you to extend its functionality by accessing certain features that are 
+	
+		
+		
+			
+					<p class="pop_up" id="title_agree"><b>License</b></p>
+						<p class="pop_up"><span id="first_letter">T</span>his product may allow you to extend its functionality by accessing certain features that are 
 						hosted online (“online services”), provided you have a high-speed Internet connection. The online 
 						services, and some features thereof, may not be available in all countries, languages, and/or 
 						currencies and may be discontinued in whole or in part without notice.  Use of the online services 
@@ -53,26 +49,19 @@
 						terms of use and Online Privacy Policy, visit www.adobe.com.
 						IntenseDebate email notifications alert you and your readers of new comments, encouraging return visits 
 						and additional commenting. You can reply to and moderate comments via email, while threading makes it easy
-						to follow the conversation.
-
-					<a 
+						to follow the conversation.</p>
+						<a 
 						onClick="document.getElementById('open_block').style.display='none';return false;" 
 						title="" 
 						id="close">
-						Close
+						<p> Close </p>
 					</a>
 				
 			
 					
-				</td>
-				<td class="right0"></td>
-			</tr>
-			<tr>
-				<td class="bottom_left0"></td>
-				<td class="bottom0"></td>
-				<td class="bottom_right0"></td>
-			</tr>
-		</table>
+			
+		
+		
 </div></label></input> </td>
 				
 			</tr>
