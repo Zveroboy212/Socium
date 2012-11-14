@@ -66,6 +66,8 @@ GEM
       dm-core (~> 1.2.0)
     do_sqlite3 (0.10.10)
       data_objects (= 0.10.10)
+    do_sqlite3 (0.10.10-x86-mingw32)
+      data_objects (= 0.10.10)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)

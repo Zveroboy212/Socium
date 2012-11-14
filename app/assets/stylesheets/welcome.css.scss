@@ -200,3 +200,11 @@ a {color:#F00}
 	font-size: 20px;
 
 }
+#person_name, #person_surname, #person_nickname, #person_email, #person_password{ 	width: 150px; }
+
+
+#open_block{
+	position: absolute;
+	top: 0px;
+	right: -400px; 
+}
